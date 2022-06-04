@@ -2,21 +2,30 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-require("dotenv").config();
 
 const app = express();
+
+//import routes
+const postRoutes = require('./routes/posts');
+
+//app middleware
+app.use(bodyParser.json());
 app.use(cors());
 
+//route middleware
+app.use(postRoutes);
 
-//backend port
-const PORT = process.env.PORT || 8070;
-//mongodb url
-const URL = process.env.MONGODB_URL;
+const PORT =9000;
+const DB_URL = 'mongodb+srv://nirashaj:12345@cluster0.ny2do.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
-//run the server
-app.listen(PORT, () => console.log(`server is running on ${PORT}`));
+mongoose.connect(DB_URL)
+.then(() => {
+    console.log('DB Connected');
+})
+.catch((err) => {
+    console.log('DB Connection Error', err);
+})
 
-//create database connection
-mongoose.connect(URL)
-    .then(() => console.log("connected to the database"))
-    .catch((err) => console.error(err));
+app.listen(PORT, () => {
+    console.log(`App is running on ${PORT}`);
+});
