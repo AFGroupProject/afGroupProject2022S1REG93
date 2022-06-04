@@ -67,6 +67,8 @@ export default class editMarking extends Component {
 
   render() {
     return (
+      <section id="content" className='py-5'>
+        <div className="container">
       <div className="col-md-8 mt-4 mx-auto">
         <h1 className="h3 mb-3 font-weight-normal">Edit Marking Scheme</h1>
           <form className="needs-validation" noValidate>
@@ -105,11 +107,10 @@ export default class editMarking extends Component {
               <i className="far fa-check-square"></i>
               &nbsp;Update
             </button>
-
           </form>
-
-
       </div>
+      </div>
+      </section>
     )
   }
 }

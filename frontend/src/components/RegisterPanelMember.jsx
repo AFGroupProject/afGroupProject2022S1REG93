@@ -172,7 +172,7 @@ const RegisterPanelMember = () => {
                         </div>
                         <div className="row d-flex">
                             <div className="col">
-                                <button className="btn btn-lg btn-primary" onClick={addPanelMember}>Submit</button>
+                                <button className="btn btn-lg btn-primary" onClick={addPanelMember}><i class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;&nbsp;Register</button>
                             </div>                        
                         </div>
                     </form>

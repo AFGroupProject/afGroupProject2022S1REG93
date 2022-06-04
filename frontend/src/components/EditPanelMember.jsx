@@ -176,7 +176,7 @@ const EditPanelMember = () => {
                         </div>
                         <div className="row d-flex">
                             <div className="col">
-                                <button onClick={updatePanelMember} className="btn btn-lg btn-primary">Submit</button>
+                                <button onClick={updatePanelMember} className="btn btn-lg btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Modify Now</button>
                             </div>                        
                         </div>
                     </form>

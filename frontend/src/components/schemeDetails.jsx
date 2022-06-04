@@ -29,22 +29,25 @@ export default class schemeDetails extends Component {
 
     const {criteria,description,distribution} = this.state.post;
     return (
-      <div style={{marginTop:'20px'}}>
-        <h3>Scheme Details</h3>
-        
-        <dl className="row">
-          <dt className="col-sm-3">Criteria</dt>
-          <dd className="col-sm-9">{criteria}</dd>
-
-          <dt className="col-sm-3">Description</dt>
-          <dd className="col-sm-9">{description}</dd>
-
-          <dt className="col-sm-3">Distribution</dt>
-          <dd className="col-sm-9">{distribution}</dd>
-
-        </dl>
-      </div>
       
+      <section id="content" className="py-5">
+        <div className="container">
+            <div className='col'>
+            <h3>Scheme Details</h3>
+            
+            <dl className="row mt-4">
+              <dt className="col-sm-3">Criteria</dt>
+              <dd className="col-sm-9">{criteria}</dd>
+
+              <dt className="col-sm-3">Description</dt>
+              <dd className="col-sm-9">{description}</dd>
+
+              <dt className="col-sm-3">Distribution</dt>
+              <dd className="col-sm-9">{distribution}</dd>
+            </dl>
+          </div>
+        </div>
+      </section>      
     )
   }
 }

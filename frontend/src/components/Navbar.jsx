@@ -15,30 +15,19 @@ const Navbar = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Services</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Contact</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Admin</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/posts">All MArking Scheme</a>
-
-                            <a className="nav-link" href="/about">About</a>
+                        </li>   
+                        <li>
+                          <a className="nav-link" href="/about">About</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/service">Services</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/contact">Contact</a>
-                        </li>
+                        </li>                     
+                        <li className="nav-item">
+                            <a className="nav-link" href="/posts">All MArking Scheme</a>
+                          </li>                        
                         <li className="nav-item">
                             <a className="nav-link" href="/paneladmin">Panel Member</a>
                         </li>

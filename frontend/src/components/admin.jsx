@@ -21,9 +21,9 @@ const admin = () => {
                                     for Co-supervisor</b>and more as a Student in SLIIT.</p>
 
                             <div className="buttons d-flex justify-content-center">
-                                <button className="btn btn-outline-light me-4 
+                                {/* <button className="btn btn-outline-light me-4 
                                 rounded-pill px-4 py-2" onClick={handleClick}>Our Services</button>
-                                <a href="/service"></a>
+                                <a href="/service"></a> */}
                             </div>
                         </div>
                     </div>

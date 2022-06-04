@@ -29,7 +29,7 @@ function App(){
                 <Route exact path='/registerpm' component={RegisterPanelMember}/>
                 <Route exact path='/editpm/:id' component={EditPanelMember}/>
                 <Route exact path='/profile/:id' component={ProfilePanelMember}/>
-//                 <Route exact path = '/' component={admin}/>
+//              <Route exact path = '/' component={Home}/>
                 <Route exact path= '/posts' component={viewMarking}/>
                 <Route exact path = '/create' component={createMarking}/>                
                 <Route exact path = '/edit/:id' component={editMarking}/>
