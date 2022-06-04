@@ -9,14 +9,21 @@
     "author": "nirashaj",
     "license": "ISC",
     "dependencies": {
+<<<<<<< HEAD
         "axios": "^0.27.2",
         "parcel": "^2.5.0",
+=======
+        "parcel": "^2.6.0",
+>>>>>>> 3ae0aeb80901592109cf82762a7d218780805634
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
         "react-router-dom": "^5.2.0"
     },
     "devDependencies": {
+<<<<<<< HEAD
         "buffer": "^6.0.3",
+=======
+>>>>>>> 3ae0aeb80901592109cf82762a7d218780805634
         "process": "^0.11.10"
     }
 }

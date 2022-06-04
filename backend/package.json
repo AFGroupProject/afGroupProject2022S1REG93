@@ -4,18 +4,26 @@
     "description": "",
     "main": "server.js",
     "scripts": {
+<<<<<<< HEAD
         "server": "nodemon server.js",
         "frotend": "npm run start --prefix frontend",
         "dev": "concurrently \"npm run server\" \"npm run frontend\""
+=======
+        "start": "nodemon server.js"
+>>>>>>> 3ae0aeb80901592109cf82762a7d218780805634
     },
     "author": "nirashaj",
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.20.0",
         "cors": "^2.8.5",
-        "dotenv": "^16.0.0",
+        "dotenv": "^16.0.1",
         "express": "^4.18.1",
+<<<<<<< HEAD
         "mongoose": "^6.3.2",
+=======
+        "mongoose": "^6.3.5",
+>>>>>>> 3ae0aeb80901592109cf82762a7d218780805634
         "nodemon": "^2.0.16"
     }
 }
