@@ -1,4 +1,4 @@
-import Nav from './src/components/Nav'
+import Navbar from './src/components/Navbar'
 import PanelMembers from './src/components/PanelMembers'
 import RegisterPanelMember from './src/components/RegisterPanelMember'
 import EditPanelMember from './src/components/EditPanelMember'
@@ -7,19 +7,21 @@ import './src/components/panelMember.css'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import ContextProvider from './src/components/context/ContextProvider'
 import Home from '/src/components/Home'
+import Footer from './src/components/Footer'
 
 function App(){
     return(
         <ContextProvider>
         <Router>        
-            <Nav/>
+            <Navbar/>
             <Switch>
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/paneladmin' component={PanelMembers}/>
                 <Route exact path='/registerpm' component={RegisterPanelMember}/>
                 <Route exact path='/editpm/:id' component={EditPanelMember}/>
                 <Route exact path='/profile/:id' component={ProfilePanelMember}/>
-            </Switch>        
+            </Switch> 
+            <Footer/>      
         </Router>
         </ContextProvider>
 
