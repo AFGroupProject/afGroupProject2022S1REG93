@@ -131,7 +131,7 @@ const PanelMembers = () => {
             </div>   
             <div className="col"></div>         
             <div className="col text-end">
-                <NavLink to="/registerpm" className="btn btn-primary">Add member</NavLink>
+                <NavLink to="/registerpm" className="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp;Add member</NavLink>
             </div>
         </div>
 
@@ -186,13 +186,13 @@ const PanelMembers = () => {
                 <td>{element.phone}</td>
                 <td>{element.edu}</td>
                 <td>
-                    <NavLink to={`/profile/${element._id}`} className="btn btn-success mx-1"><i className="fa-solid fa-eye"></i></NavLink>
+                    <NavLink to={`/profile/${element._id}`} className="btn btn-success mx-1"><i class="fa fa-eye" aria-hidden="true"></i></NavLink>
                 </td>
                 <td>
-                    <NavLink to={`/editpm/${element._id}`} className="btn btn-warning mx-1"><i className="fa-solid fa-pen-to-square"></i></NavLink>                    
+                    <NavLink to={`/editpm/${element._id}`} className="btn btn-warning mx-1"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></NavLink>                    
                 </td>
                 <td>
-                    <button onClick={()=>deletePanelMember(element._id)} className="btn btn-danger mx-1"><i className="fa-solid fa-trash-can"></i></button>
+                    <button onClick={()=>deletePanelMember(element._id)} className="btn btn-danger mx-1"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
             </tr>
             )
