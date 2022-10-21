@@ -5,7 +5,11 @@
 }
 
 .form-control{
-    background-color: #f8f8f8 !important;
+    background-color: #ebfafb !important;
+    border: 1px solid #64b5c7 !important;
+}
+.form-control.white{
+    background-color: #fff !important;
 }
 
 .thumbnail img{
@@ -46,4 +50,79 @@ h2{
     font-weight: 600;
     font-size: 16px;
     border-radius: 4px;
+}
+
+/* home css */
+
+/* Home */
+#home {
+    background:rgb(0, 101, 219) ;
+    background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 
+    100%);
+    min-height: 500px;
+  }
+  
+  /* Cards */
+  .card {
+    transition:all 0.5s ease;
+  }
+  .card:hover{
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  }
+  
+  /* Form */
+  .form{
+  
+    background:rgb(0, 101, 219) ;
+    background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 
+    100%);
+  
+  }
+  
+  /* Footer */
+  .footer {
+    background:rgb(0, 101, 219) ;
+    background: linear-gradient(90deg, rgb(0,101,219) 40%, rgba(0, 212, 255, 1) 
+    100%);
+  }
+
+/* home css */
+
+
+/* table css */
+
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+  background-color: #dcf8ff;
+}
+
+.table>:not(caption)>*>*{
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.blue-thead{
+  background:rgb(0, 101, 219) ;
+  background: linear-gradient(90deg, rgb(0,101,219) 50%, rgba(0, 212, 255, 1) 
+  100%);
+  color: #fff;
+  border-bottom: 2px solid rgb(0, 101, 219);
+}
+
+.search-wrap{
+  padding: 20px 20px !important;
+  margin: 0 10px;
+  background: #d1ebf2;
+  border-radius: 4px;
+}
+
+.search-wrap label{
+  font-weight: bold;
+}
+
+.btn.btn-primary{
+  padding: 12px 25px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 17px;
 }

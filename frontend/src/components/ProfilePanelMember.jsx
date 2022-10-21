@@ -85,8 +85,8 @@ const ProfilePanelMember = () => {
                     </ul>
                 </div>
                 <div className="controls col-3 d-grid p-3">
-                    <NavLink to={`/editpm/${getAllMembers._id}`} className='btn btn-warning mb-2'>Edit</NavLink>
-                    <button onClick={()=>deletePanelMember(getAllMembers._id)} className='btn btn-danger'>Delete</button>
+                    <NavLink to={`/editpm/${getAllMembers._id}`} className='btn btn-warning mb-2'><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Edit</NavLink>
+                    <button onClick={()=>deletePanelMember(getAllMembers._id)} className='btn btn-danger'><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;&nbsp;Delete</button>
                 </div>
             </div>
 

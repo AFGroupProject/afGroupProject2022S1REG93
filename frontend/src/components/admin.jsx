@@ -1,18 +1,6 @@
 import React from 'react';
-import About from './About';
-import Services from './Services';
-import Contact from './Contact';
-import { useNavigate } from 'react-router';
 
-const Home = () => {
-
-    // const navigate = useNavigate();
-
-    // function handleClick() {
-
-    //     navigate('/service');
-
-    // }
+const admin = () => {
     return (
         <div>
             <section id="home">
@@ -41,14 +29,10 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-            <About />
-            <Services />
-            <Contact />
         </div>
     );
 }
 
 
 
-export default Home;
+export default admin;

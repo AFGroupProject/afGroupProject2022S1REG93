@@ -7,13 +7,23 @@ const panelmembers = require("./models/PanelMSchema");
 const router = require("./routes/router");
 
 const app = express();
+
+
+//import routes
+const createRoutes = require('./routes/adminRoutes');
+
+//app middleware
+app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 
+//route middleware
+app.use(createRoutes);
 app.use(router);
 
 //backend port
 const PORT = process.env.PORT || 8070;
+
 //mongodb url
 const URL = process.env.MONGODB_URL;
 
@@ -22,5 +32,7 @@ app.listen(PORT, () => console.log(`server is running on ${PORT}`));
 
 //create database connection
 mongoose.connect(URL)
-    .then(() => console.log("connected to the database"))
+    .then(() => {
+        console.log("connected to the database");
+    })
     .catch((err) => console.error(err));
